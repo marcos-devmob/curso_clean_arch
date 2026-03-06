@@ -5,7 +5,7 @@ import 'package:sqflite/sqflite.dart';
 class AppDatabase {
   static Database? _database;
 
-  static Future<Database> get database async {
+  static Future<Database> get instance async {
     if (_database != null) return _database!;
 
     _database = await _initDatabase();
