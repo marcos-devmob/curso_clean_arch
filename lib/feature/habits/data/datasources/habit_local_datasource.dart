@@ -1,4 +1,4 @@
-import 'package:curso_clean_arch/feature/models/habit_model.dart';
+import 'package:curso_clean_arch/feature/habits/data/models/habit_model.dart';
 
 abstract class HabitLocalDataSource {
   Future<void> insertHabit(HabitModel habit);
